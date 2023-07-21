@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 100px;
+  background-color: lightgray;
+  border-bottom: 2px solid gray;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
+  .btn {
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+  }
+  .btn:hover {
+    cursor: pointer;
+  }
+  .btn:active {
+    outline-width: 3px;
+  }
+  // WORDS PART START
+  .words {
+    margin-bottom: 20px;
+    font-weight: bold;
+    .bad-words {
+      color: red;
+    }
+  }
+  // WORDS PART END
+
+  // CONTROL PART START
+  .control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    #addWordInput {
+      width: 60%;
+      height: 50px;
+      border-radius: 5px;
+      padding: 0 5px;
+      border: 2px solid lightgray;
+    }
+    #addWordInput:focus {
+      border-color: lightskyblue;
+      outline: 3px solid lightblue;
+    }
+    #addWord {
+      width: 19%;
+      background-color: orange;
+      outline: 0px solid rgba(255, 166, 0, 0.3);
+    }
+    #addWord:hover {
+      background-color: rgb(224, 146, 0);
+    }
+    #addWord:active {
+      outline-width: 3px;
+    }
+    #resetWords {
+      width: 19%;
+      background-color: red;
+      outline: 0px solid rgba(255, 0, 0, 0.3);
+      color: white;
+    }
+    #resetWords:hover {
+      background-color: rgb(222, 0, 0);
+    }
+    #resetWords:active {
+      outline-width: 3px;
+    }
+  }
+  // CONTROL PART END
+
+  // TEXT PART START
+  .text {
+    textarea {
+      width: 100%;
+      border-radius: 5px;
+      height: 200px;
+      padding: 5px;
+      resize: none;
+      margin-bottom: 20px;
+      border: 2px solid lightgray;
+    }
+    textarea:focus {
+      border-color: lightskyblue;
+      outline: 3px solid lightblue;
+    }
+    #cenzorText {
+      width: 100%;
+      background-color: green;
+      outline: 0px solid rgba(0, 128, 0, 0.3);
+      color: white;
+    }
+    #cenzorText:hover {
+      background-color: rgb(12, 116, 12);
+    }
+    #cenzorText:active {
+      outline-width: 3px;
+    }
+  }
+  // TEXT PART END
+}

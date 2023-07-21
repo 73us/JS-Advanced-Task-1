@@ -1,0 +1,14 @@
+<header>Angular list of prohibited words</header>
+<div class="container">
+    <div class="words"><span>Bad words: </span><span class="bad-words">{{showBanWords}}</span></div>
+    <div class="control">
+        <input type="text" [style.border-color]="isInputEmpty ? 'lightgray':'red'" [(ngModel)]="badWord"
+            id="addWordInput" [placeholder]="inputPlaceholder">
+        <button class="btn" (click)="addWord()" id="addWord">Add</button>
+        <button class="btn" (click)="resetWords()" id="resetWords">Reset</button>
+    </div>
+    <div class="text">
+        <textarea [(ngModel)]="cenzorTextVal" [style.border-color]="isTxtAreaEmpty ? 'lightgray':'red'" [placeholder]="textareaPlaceholder"></textarea>
+        <button class="btn" (click)="cenzorText()" id="cenzorText">Cenzor</button>
+    </div>
+</div>
